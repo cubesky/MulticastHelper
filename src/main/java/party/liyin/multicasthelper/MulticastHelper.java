@@ -1,3 +1,5 @@
+package party.liyin.multicasthelper;
+
 import java.io.Closeable;
 import java.io.IOException;
 import java.net.*;
@@ -7,7 +9,7 @@ import java.util.concurrent.Future;
 
 public class MulticastHelper implements Closeable{
 
-    interface MulticastCallback {
+    public interface MulticastCallback {
         /**
          * Multicast Callback
          * @param address multicast source host
@@ -36,7 +38,7 @@ public class MulticastHelper implements Closeable{
     }
 
     /**
-     * Send Multicast without new a MulticastHelper Object
+     * Send Multicast without new a party.liyin.multicasthelper.MulticastHelper Object
      * @param multicastHost Multicast Host, Must between 224.0.0.0 to 239.255.255.255
      * @param multicastPort Multicast Port
      * @param multicastData Multicast Data you want to send
@@ -50,7 +52,7 @@ public class MulticastHelper implements Closeable{
     }
 
     /**
-     * Send Multicast use MulticastHelper object
+     * Send Multicast use party.liyin.multicasthelper.MulticastHelper object
      * @param multicastData Multicast Data you want to send
      * @throws IOException Exception on IO
      */

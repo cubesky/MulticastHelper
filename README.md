@@ -5,11 +5,11 @@ A Java library to make your multicast easiler
 You can use `CubeSky Repo` ([https://cubesky-mvn.github.io](https://cubesky-mvn.github.io)) to import this library.
 
 ## API
-### Without MulticastHelper Object
-#### MulticastHelper.sendMulticast(String,int,byte[])
-Send data without new a MulticastHelper Object.
+### Without party.liyin.multicasthelper.MulticastHelper Object
+#### party.liyin.multicasthelper.MulticastHelper.sendMulticast(String,int,byte[])
+Send data without new a party.liyin.multicasthelper.MulticastHelper Object.
 
-### With MulticastHelper Object
+### With party.liyin.multicasthelper.MulticastHelper Object
 First, you need new a Multicast Helper Object. Give it a multicast host and a port.
 
 ```java
